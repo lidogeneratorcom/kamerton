@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Камертон Отношений — Курс</title>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Merriweather',serif;background:#FDF8F4;color:#2D2A26;line-height:1.8;font-size:17px}
+.container{max-width:680px;margin:0 auto;padding:20px 20px 40px}
+h1{font-family:'Inter',sans-serif;font-size:32px;font-weight:700;text-align:center;margin:40px 0 10px}
+h1 .sub{display:block;font-size:18px;font-weight:400;color:#8B7D72;margin-top:8px;font-family:'Merriweather',serif}
+h2{font-family:'Inter',sans-serif;font-size:23px;font-weight:700;margin:36px 0 18px}
+h3{font-family:'Inter',sans-serif;font-size:19px;font-weight:600;margin:28px 0 14px}
+.tb p{margin-bottom:16px;color:#4A4540}
+.accent{color:#B8634B;font-weight:700}
+.hl{color:#2D2A26;font-weight:700}
+.divider{text-align:center;margin:40px 0;color:#C4856B;font-size:24px;letter-spacing:8px}
+.aph{width:100%;max-width:500px;border-radius:20px;object-fit:cover;margin:30px auto;display:block;box-shadow:0 8px 40px rgba(0,0,0,0.12)}
+.ph{text-align:center;padding:40px 24px;background:linear-gradient(135deg,#F7F1EB,#FDF8F4);border-radius:24px;margin:30px 0}
+.lc{background:#FFF;border:1px solid #E8D5C4;border-radius:20px;padding:24px;margin-bottom:16px;box-shadow:0 2px 12px rgba(0,0,0,0.04)}
+.lp{font-family:'Inter',sans-serif;font-size:17px;font-weight:700;color:#B8634B;margin-bottom:6px}
+.lt{font-size:14px;color:#8B7D72;margin-bottom:12px;font-style:italic}
+.ld{color:#4A4540;font-size:16px;margin-bottom:12px;line-height:1.7}
+.lr{background:#E8F5E8;border-radius:12px;padding:14px 18px;font-size:15px;color:#2D6B2D;line-height:1.6}
+.at{display:block;width:100%;background:#F7F1EB;border:2px solid #E8D5C4;border-radius:16px;padding:20px 24px;font-family:'Inter',sans-serif;font-size:17px;font-weight:600;color:#B8634B;cursor:pointer;text-align:center;margin:24px 0 16px;transition:all 0.3s}
+.at:hover{background:#F0E6DC}
+.ac{display:none}
+.ac.open{display:block}
+.cl{background:#FFF;border:1px solid #E8D5C4;border-radius:16px;padding:18px 20px;margin-bottom:10px}
+.cl .lp{font-size:16px;font-weight:600}
+.cl .ld{color:#6B5D52;font-size:15px}
+.tli{display:flex;margin-bottom:24px}
+.tlm{min-width:60px;text-align:center}
+.tld{width:16px;height:16px;background:#C4856B;border-radius:50%;margin:6px auto 8px}
+.tll{font-family:'Inter',sans-serif;font-size:12px;font-weight:700;color:#B8634B;text-transform:uppercase;letter-spacing:1px}
+.tlc{background:#FFF;border:1px solid #E8D5C4;border-radius:16px;padding:20px;margin-left:16px;flex:1}
+.tlc p{color:#4A4540;font-size:16px;margin-bottom:8px}
+.tg-chat{background:#0e1621;border-radius:16px;padding:20px 16px;margin:20px 0}
+.tg-msg{max-width:88%;margin-bottom:12px}
+.tg-msg:last-child{margin-bottom:0}
+.tg-bubble{background:#2b5278;border-radius:12px 12px 12px 4px;padding:10px 14px 6px;position:relative}
+.tg-name{font-family:'Inter',sans-serif;font-size:13px;font-weight:600;color:#6ab3f3;margin-bottom:4px}
+.tg-text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-size:14.5px;color:#f5f5f5;line-height:1.55}
+.tg-text strong{color:#ffffff}
+.tg-meta{display:flex;justify-content:flex-end;align-items:center;gap:4px;margin-top:4px}
+.tg-time{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-size:11px;color:#6b8fb3}
+.tg-check{font-size:12px;color:#6ab3f3}
+.img{background:linear-gradient(135deg,#E8F5E8,#F0FAF0);border-radius:24px;padding:36px 28px;margin:40px 0}
+.img h2{color:#2D6B2D;text-align:center;margin-top:0}
+.img p{color:#3D5C3D;margin-bottom:16px}
+.pc{background:#FFF;border-radius:20px;padding:32px 24px;text-align:center;border:1px solid #E8D5C4;margin-bottom:24px;box-shadow:0 4px 20px rgba(0,0,0,0.06)}
+.pn{font-family:'Inter',sans-serif;font-size:48px;font-weight:700;color:#2D6B2D;margin:16px 0}
+.pn .cur{font-size:28px}
+.cds{background:linear-gradient(135deg,#FFF5F4,#FDF8F4);border-radius:20px;padding:28px 24px;text-align:center;margin:30px 0;border:1px solid #F0D5CF}
+.cdl{font-family:'Inter',sans-serif;font-size:15px;font-weight:600;color:#D4483B;margin-bottom:16px;text-transform:uppercase;letter-spacing:1px}
+.cdt{display:flex;justify-content:center;gap:12px}
+.cdu{background:#FFF;border-radius:12px;padding:12px 16px;min-width:68px;box-shadow:0 2px 8px rgba(0,0,0,0.06)}
+.cdn{font-family:'Inter',sans-serif;font-size:28px;font-weight:700;color:#D4483B;display:block}
+.cdx{font-size:11px;color:#8B7D72;text-transform:uppercase;letter-spacing:1px}
+.cta{text-align:center;margin:40px 0;padding:36px 24px;background:linear-gradient(135deg,#FDF8F4,#F7F1EB);border-radius:24px}
+.btn{display:inline-block;background:linear-gradient(135deg,#C4856B,#B8634B);color:#FFF;text-decoration:none;padding:20px 48px;border-radius:60px;font-family:'Inter',sans-serif;font-size:18px;font-weight:700;box-shadow:0 8px 32px rgba(184,99,75,0.35);transition:all 0.3s}
+.btn:hover{transform:translateY(-3px)}
+.sub{margin-top:16px;font-size:14px;color:#8B7D72}
+.cf{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:20px}
+.cfi{background:#FFF;border-radius:30px;padding:8px 18px;font-family:'Inter',sans-serif;font-size:13px;color:#6B5D52;box-shadow:0 1px 4px rgba(0,0,0,0.06)}
+.faq{background:#FFF;border-radius:20px;padding:28px 24px;margin:24px 0;border:1px solid #E8D5C4}
+.faq h3{margin-top:0;color:#B8634B}
+.faq p{color:#4A4540;margin-bottom:12px}
+.il{margin:24px 0}
+.ii{display:flex;align-items:flex-start;padding:10px 0;border-bottom:1px solid #F0E6DC}
+.ii:last-child{border-bottom:none}
+.ic{color:#2D6B2D;font-size:18px;margin-right:12px;margin-top:2px}
+.ii p{color:#4A4540;font-size:16px}
+.ft{margin:40px 0;padding:36px 28px;background:#F7F1EB;border-radius:24px;text-align:center}
+.ft p{color:#4A4540;margin-bottom:16px}
+.cs{font-size:19px;font-weight:700;color:#2D2A26}
+.price-q{font-size:18px;font-style:italic;font-weight:700;color:#2D2A26;margin:0 0 4px 0}
+.price-a{font-size:16px;color:#4A4540;margin:0 0 28px 0}
+@media(max-width:480px){
+body{font-size:16px}.container{padding:16px}h1{font-size:26px}.pn{font-size:40px}.btn{padding:18px 36px;font-size:16px;width:100%}.cdu{min-width:58px;padding:10px 12px}.cdn{font-size:24px}.cf{flex-direction:column;align-items:center}.tg-msg{max-width:92%}
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<img src="anton-pyramid.jpg" alt="Антон Бояров" class="aph">
+
+<div class="tb">
+<h2>Я собирал эту систему 10 лет.</h2>
+<p>Через собственный развод. Через сотни пар. Через тысячи часов работы. Через ошибки, которые я совершил сам, и которые потом видел у других — раз за разом, как под копирку.</p>
+<p>Я убрал всё, что не работает. Оставил только то, что реально меняет отношения.</p>
+<p>И вложил это в один курс.</p>
+</div>
+
+<div class="ph">
+<h1>КАМЕРТОН ОТНОШЕНИЙ<span class="sub">Полная система взаимоотношений между мужчиной и женщиной.</span></h1>
+</div>
+
+<div class="tb">
+<h2>Это не длинный курс, который нужно «пройти от и до».</h2>
+<p>Это 17 самодостаточных уроков. Начни с любого — получишь результат. А все вместе — полная система, которая меняет отношения.</p>
+<p>Ты открываешь оглавление, находишь то, что болит прямо сейчас — и смотришь. Один урок. Сегодня вечером. И уже завтра утром ты понимаешь то, чего не понимала годами.</p>
+<p>У тебя <strong>3 месяца доступа</strong> — торопиться некуда.</p>
+</div>
+
+<div class="divider">• • •</div>
+
+<h2>Найди свою боль — и начни с неё:</h2>
+
+<div class="lc">
+<div class="lp">🔹 «Я тащу всё на себе, а он будто выключился»</div>
+<div class="lt">Урок 1. Мужское и женское начало</div>
+<div class="ld">Почему ты стала главной, а он — наблюдателем. Как роли переворачиваются незаметно — и как вернуть его в позицию мужчины.</div>
+<div class="lr"><strong>После урока:</strong> ты поймёшь, почему чем больше ты берёшь на себя — тем слабее он рядом.</div>
+</div>
+
+<div class="lc">
+<div class="lp">🔹 «Я делаю для него всё — а в ответ тишина»</div>
+<div class="lt">Урок 2. Форма, суть и 5 языков любви</div>
+<div class="ld">Почему ты любишь его на своём языке, а он твоей любви не видит. Как перестать ждать, что он догадается.</div>
+<div class="lr"><strong>После урока:</strong> ты увидишь свой язык любви и его. И впервые поймёшь, почему вы оба стараетесь — а оба чувствуете себя недолюбленными.</div>
+</div>
+
+<div class="lc">
+<div class="lp">🔹 «Всё держится на мне. Я не жена — я система жизнеобеспечения»</div>
+<div class="lt">Урок 3. Иерархия отношений</div>
+<div class="ld">Почему ты заняла его место. Почему он отдалился. И как мягко вернуть всё на свои места.</div>
+<div class="lr"><strong>После урока:</strong> ты поймёшь, где нарушен порядок в семье — и получишь конкретный путь обратно.</div>
+</div>
+
+<div class="lc">
+<div class="lp">🔹 «Мы постоянно ссоримся, и я уже устала»</div>
+<div class="lt">Урок 6. Конфликты: как не разрушить, а сблизить</div>
+<div class="ld">Почему ты молчишь годами и взрываешься в один день. Конкретная технология: как выносить конфликт наружу так, чтобы он сближал.</div>
+<div class="lr"><strong>После урока:</strong> ты перестанешь бояться конфликтов. И получишь конкретные фразы и шаги.</div>
+</div>
+
+<div class="lc">
+<div class="lp">🔹 «Мы как с разных планет. Я говорю одно — он слышит другое»</div>
+<div class="lt">Урок 10. Мужчина и женщина: две операционные системы</div>
+<div class="ld">Как он думает. Как ты чувствуешь. Почему он закрывается — не потому что ему плевать, а потому что не знает, что делать с твоей болью.</div>
+<div class="lr"><strong>После урока:</strong> ты впервые за годы поймёшь, почему он так себя ведёт. И перестанешь принимать его молчание за равнодушие.</div>
+</div>
+
+<div class="lc">
+<div class="lp">🔹 «Я сильная — но несчастная. Я устала быть "железной"»</div>
+<div class="lt">Урок 13. Женская природа</div>
+<div class="ld">Почему ты живёшь по мужским правилам. Как вернуть мягкость, лёгкость, притяжение — не потеряв всё, что ты выстроила.</div>
+<div class="lr"><strong>После урока:</strong> ты перестанешь доказывать, тянуть, напрягаться. И почувствуешь, что быть женщиной — это не слабость, а твоя сила.</div>
+</div>
+
+<button class="at" onclick="toggleAccordion()">▼ Ещё 11 уроков — нажми, чтобы увидеть все</button>
+
+<div class="ac" id="accordionLessons">
+
+<div class="cl">
+<div class="lp">🔹 «Я выбрала "правильного" мужчину — а внутри пусто»</div>
+<div class="ld">Урок 4. Где заканчивается любовь и начинается зависимость — и как выйти из этого цикла.</div>
+</div>
+
+<div class="cl">
+<div class="lp">🔹 «Я не понимаю, что со мной. Я запуталась»</div>
+<div class="ld">Урок 5. Живой разбор реальных ситуаций — про обиды, зависимость, роли, страх отпустить контроль.</div>
+</div>
+
+<div class="cl">
+<div class="lp">🔹 «Меня качает: вчера всё хорошо, сегодня — пустота»</div>
+<div class="ld">Урок 7. Три энергии, которые управляют твоей жизнью. Практика «Котелок» — чтобы очистить голову и вернуть покой.</div>
+</div>
+
+<div class="cl">
+<div class="lp">🔹 «Мне тяжело жить. Не отношения — сама жизнь давит»</div>
+<div class="ld">Урок 8. Почему всё через усилие. Почему одни и те же сценарии повторяются. И что конкретно делает жизнь тяжёлой — или лёгкой.</div>
+</div>
+
+<div class="cl">
+<div class="lp">🔹 «Внутри как будто дыра. Наполняю — а всё утекает»</div>
+<div class="ld">Урок 9. Где в тебе «трещины», через которые утекает энергия. Практика принятия — после которой люди впервые за годы чувствуют выдох.</div>
+</div>
+
+<div class="cl">
+<div class="lp">🔹 «Он потерял силу. Где тот мужчина, за которого я выходила?»</div>
+<div class="ld">Урок 11. Почему мужчина слабнет. Что происходит с ним внутри — без обвинений, без идеализации. Честно и глубоко.</div>
+</div>
+
+<div class="cl">
+<div class="lp">🔹 «Как вернуть его силу?»</div>
+<div class="ld">Урок 12. Что ослабляет мужчину, что усиливает. Как перестать тянуть его — и дать пространство, в котором он снова станет опорой.</div>
+</div>
+
+<div class="cl">
+<div class="lp">🔹 «Я меняю поведение — а жизнь не меняется. Почему?»</div>
+<div class="ld">Урок 14. Где корневой сбой — глубже поведения, глубже привычек. Диагностика, после которой ты впервые увидишь причину.</div>
+</div>
+
+<div class="cl">
+<div class="lp">🔹 «Между нами холод. Любовь ушла?»</div>
+<div class="ld">Урок 15. Как работает энергетический поток в паре — и где он заблокирован. Как вернуть тепло и живую близость.</div>
+</div>
+
+<div class="cl">
+<div class="lp">🔹 Уроки 16 и 17</div>
+<div class="ld">Завершающие уроки — собирают всю систему воедино и дают финальные инструменты для закрепления изменений.</div>
+</div>
+
+</div>
+
+<div class="divider">• • •</div>
+
+<h2>Вот что происходит у женщин, которые прошли Камертон.</h2>
+<div class="tb"><p style="color:#6B5D52;">Через меня прошли сотни пар. Вот что происходит снова и снова:</p></div>
+
+<div class="tli">
+<div class="tlm"><div class="tll">Неделя 1</div><div class="tld"></div></div>
+<div class="tlc"><p>Она начинает видеть механизмы. Не «кто виноват», а <strong>ПОЧЕМУ</strong> всё идёт по кругу. Одно это снимает половину напряжения.</p></div>
+</div>
+
+<div class="tli">
+<div class="tlm"><div class="tll">Месяц 1</div><div class="tld"></div></div>
+<div class="tlc"><p>Она перестаёт реагировать по-старому. Не потому что терпит. А потому что видит, что стоит за его словами. <strong>Он замечает.</strong></p></div>
+</div>
+
+<div class="tli">
+<div class="tlm"><div class="tll">Месяц 2-3</div><div class="tld" style="background:#2D6B2D;"></div></div>
+<div class="tlc"><p>Он начинает вести себя иначе. <strong>Сам. Без уговоров.</strong> Потому что изменилась она — и система пришла в движение.</p></div>
+</div>
+
+<div class="tb">
+<p>Не все. Не всегда. Иногда женщина проходит Камертон и понимает, что ей нужно уйти — и уходит спокойно, с ясным пониманием почему. И это тоже результат.</p>
+</div>
+
+<div class="divider">• • •</div>
+
+<h2 style="text-align:center;">Что говорят те, кто прошёл Камертон</h2>
+
+<div class="tg-chat">
+
+<div class="tg-msg">
+<div class="tg-bubble">
+<div class="tg-name">Марина</div>
+<div class="tg-text">С мужем стала более мягко и позитивно общаться. Муж стал тоже более мягким, приветливым, терпеливым и внимательным. <strong>Вчера даже розочку купил, хотя давно не покупал.</strong></div>
+<div class="tg-meta"><span class="tg-time">18:42</span><span class="tg-check">✓✓</span></div>
+</div>
+</div>
+
+<div class="tg-msg">
+<div class="tg-bubble">
+<div class="tg-name">Алина</div>
+<div class="tg-text">Сейчас замечаю, что стала более спокойной, умиротворённой, уверенной, позитивной, расслабленной и лёгкой. <strong>Больше стала улыбаться, проявлять себя, реализовывать свои желания.</strong></div>
+<div class="tg-meta"><span class="tg-time">19:15</span><span class="tg-check">✓✓</span></div>
+</div>
+</div>
+
+<div class="tg-msg">
+<div class="tg-bubble">
+<div class="tg-name">Наталья</div>
+<div class="tg-text">Я просто посмотрела один урок про конфликты. Один. На следующий день муж начал орать из-за ерунды — а я впервые не включилась. Он замолчал, посмотрел на меня и сказал <strong>«прости»</strong>. За 8 лет первый раз.</div>
+<div class="tg-meta"><span class="tg-time">20:03</span><span class="tg-check">✓✓</span></div>
+</div>
+</div>
+
+<div class="tg-msg">
+<div class="tg-bubble">
+<div class="tg-name">Елена</div>
+<div class="tg-text">Мы не разговаривали нормально месяца три. После урока про языки любви я поняла что я ему говорю говорю говорю а ему нужно другое совсем. Попробовала — <strong>он за неделю изменился. Сам.</strong> Я в шоке до сих пор</div>
+<div class="tg-meta"><span class="tg-time">20:31</span><span class="tg-check">✓✓</span></div>
+</div>
+</div>
+
+<div class="tg-msg">
+<div class="tg-bubble">
+<div class="tg-name">Ольга</div>
+<div class="tg-text">Я была на грани. Реально думала подавать на развод. Начала смотреть камертон просто чтобы разобраться в себе. Сейчас прошло 2 месяца — <strong>мы впервые за долгое время смеёмся вместе.</strong></div>
+<div class="tg-meta"><span class="tg-time">21:17</span><span class="tg-check">✓✓</span></div>
+</div>
+</div>
+
+<div class="tg-msg">
+<div class="tg-bubble">
+<div class="tg-name">Татьяна</div>
+<div class="tg-text">Посмотрела про иерархию — и меня как молнией ударило. Я же сама его задвинула! Сама всё на себя взяла и потом злюсь что он ничего не делает. <strong>Начала отпускать контроль — он начал включаться.</strong></div>
+<div class="tg-meta"><span class="tg-time">21:44</span><span class="tg-check">✓✓</span></div>
+</div>
+</div>
+
+<div class="tg-msg">
+<div class="tg-bubble">
+<div class="tg-name">Кристина</div>
+<div class="tg-text">Самое ценное — <strong>я перестала чувствовать себя сумасшедшей.</strong> Когда понимаешь ПОЧЕМУ он так себя ведёт и почему ты так реагируешь — уходит эта постоянная тревога. Я наконец сплю нормально</div>
+<div class="tg-meta"><span class="tg-time">22:08</span><span class="tg-check">✓✓</span></div>
+</div>
+</div>
+
+<div class="tg-msg">
+<div class="tg-bubble">
+<div class="tg-name">Ирина</div>
+<div class="tg-text">Это очень мощный курс, а Антон — очень сильный психолог! Его практики и подходы <strong>работают каждый день.</strong></div>
+<div class="tg-meta"><span class="tg-time">22:30</span><span class="tg-check">✓✓</span></div>
+</div>
+</div>
+
+<div class="tg-msg">
+<div class="tg-bubble">
+<div class="tg-name">Дарья</div>
+<div class="tg-text">По-хорошему, <strong>такое обучение нужно давать в школе детям!</strong></div>
+<div class="tg-meta"><span class="tg-time">22:51</span><span class="tg-check">✓✓</span></div>
+</div>
+</div>
+
+<div class="tg-msg">
+<div class="tg-bubble">
+<div class="tg-name">Виктория</div>
+<div class="tg-text"><strong>Ни разу не пожалела о покупке курса.</strong></div>
+<div class="tg-meta"><span class="tg-time">23:12</span><span class="tg-check">✓✓</span></div>
+</div>
+</div>
+
+</div>
+
+<div class="divider">• • •</div>
+
+<div class="img">
+<h2>А теперь представь.</h2>
+<p>Представь, что однажды вечером ты говоришь ему: <em>«Мне нужно с тобой поговорить.»</em></p>
+<p>А он не закатывает глаза. Не говорит «опять». Не уходит в комнату.</p>
+<p>Он садится. Смотрит на тебя. И говорит: <em>«Я слушаю.»</em></p>
+<p>И ты говоришь. Спокойно. Не потому что терпишь — а потому что ты наконец понимаешь, <strong>КАК</strong> говорить так, чтобы он услышал. И он слышит.</p>
+<br>
+<p>Представь, что ты перестаёшь бояться конфликтов. Что ссора — это больше не катастрофа, а разговор, после которого вы становитесь ближе.</p>
+<p>Представь, что ты ложишься спать — и тебе <em>спокойно</em>. Не тревожно, не одиноко. Просто спокойно.</p>
+<p>Представь, что дети видят маму, которая улыбается. Не натянуто, не «ради них». А по-настоящему.</p>
+<p>Представь, что он начинает делать вещи, о которых ты перестала просить. Не потому что ты заставила — а потому что <em>что-то изменилось между вами.</em></p>
+</div>
+
+<div class="divider">• • •</div>
+
+<h2>Всё, что внутри — за одну цену:</h2>
+
+<div class="il">
+<div class="ii"><span class="ic">✓</span><p>Почему роли переворачиваются и как вернуть его в позицию мужчины</p></div>
+<div class="ii"><span class="ic">✓</span><p>Пять языков любви — почему вы оба стараетесь, но оба недолюблены</p></div>
+<div class="ii"><span class="ic">✓</span><p>Иерархия семьи — как перестать быть «центром обслуживания»</p></div>
+<div class="ii"><span class="ic">✓</span><p>Конфликты — конкретные фразы, шаги, технология</p></div>
+<div class="ii"><span class="ic">✓</span><p>Три урока о мужской природе — его сила, сознание, энергия</p></div>
+<div class="ii"><span class="ic">✓</span><p>Женская природа — как вернуть мягкость и перестать быть «железной»</p></div>
+<div class="ii"><span class="ic">✓</span><p>Внутренний ресурс — практика «Котелок», практика принятия</p></div>
+<div class="ii"><span class="ic">✓</span><p>Обмен энергией — как вернуть тепло и притяжение</p></div>
+<div class="ii"><span class="ic">✓</span><p>Сценарии рода — как остановить наследство, которое передаётся детям</p></div>
+</div>
+
+<div class="tb" style="text-align:center;margin-top:24px;">
+<p><strong>17 уроков. Каждый — самодостаточный. Каждый решает конкретную проблему.</strong></p>
+</div>
+
+<div class="divider">• • •</div>
+
+<h2>Теперь про цену.</h2>
+
+<div class="tb">
+<p class="price-q">Сколько стоят годы, прожитые в тишине и холоде?</p>
+<p class="price-a">Заплатила бы ты 15 000₽, чтобы заменить их на тёплые вечера и счастливые разговоры с мужем?</p>
+
+<p class="price-q">Сколько стоят бессонные ночи, когда ты лежишь и думаешь — а может это конец?</p>
+<p class="price-a">Заплатила бы ты 20 000₽, чтобы засыпать спокойно, зная — у вас всё хорошо?</p>
+
+<p class="price-q">Сколько стоит счастливое будущее твоих детей, которые прямо сейчас впитывают эту модель отношений?</p>
+<p class="price-a">Заплатила бы ты 30 000₽, чтобы они выросли в семье, где мама и папа любят друг друга?</p>
+</div>
+
+<div class="pc">
+<div style="font-size:18px;font-weight:700;color:#2D2A26;margin-bottom:16px;">Именно столько стоил Камертон.</div>
+<div style="font-size:16px;color:#4A4540;margin-bottom:8px;">Но у меня для тебя хорошая новость.</div>
+<div style="font-size:16px;color:#4A4540;margin-bottom:8px;">Я прекращаю продажу курса «Камертон отношений» отдельно.<br>Скоро он будет доступен только по подписке.</div>
+<div style="font-size:16px;color:#4A4540;margin-bottom:20px;">Но прямо сейчас у тебя есть последняя возможность получить его целиком — всего за</div>
+<div class="pn">3 000 <span class="cur">₽</span></div>
+</div>
+
+<div class="tb" style="text-align:center;">
+<p>Меньше, чем ужин в ресторане, на который вы не пойдёте, потому что вам не о чем разговаривать.</p>
+</div>
+
+<div class="cta">
+<a href="#" class="btn">ПОЛУЧИТЬ КАМЕРТОН ЗА 3 000₽</a>
+<div class="cf">
+<span class="cfi">17 уроков</span>
+<span class="cfi">Доступ 3 месяца</span>
+<span class="cfi">+ 1 месяц клуба бесплатно</span>
+</div>
+</div>
+
+<div class="cds">
+<div class="cdl">До закрытия специальной цены</div>
+<div class="cdt" id="countdown">
+<div class="cdu"><span class="cdn" id="days">00</span><span class="cdx">дней</span></div>
+<div class="cdu"><span class="cdn" id="hours">00</span><span class="cdx">часов</span></div>
+<div class="cdu"><span class="cdn" id="minutes">00</span><span class="cdx">минут</span></div>
+<div class="cdu"><span class="cdn" id="seconds">00</span><span class="cdx">секунд</span></div>
+</div>
+</div>
+
+<div class="divider">• • •</div>
+
+<h2>Почему такая цена?</h2>
+<div class="tb">
+<p>14 апреля я открываю клуб «Архитектура отношений». После запуска Камертон отдельно купить будет нельзя — он станет частью клуба, доступ только по подписке, 3 000₽ в месяц.</p>
+<p>Сейчас — окно. Я хочу, чтобы в клуб с первого дня пришли люди, которые уже понимают основы.</p>
+<p>Но есть и вторая причина.</p>
+<p>Я слишком часто вижу, как семьи рушатся. Не из-за предательства. Из-за непонимания. Тихо, медленно, годами.</p>
+<p class="accent">Поэтому я убрал порог. Чтобы та, которая сегодня ночью снова будет лежать и думать «Почему он меня не слышит?» — могла получить ответ.</p>
+</div>
+
+<div class="divider">• • •</div>
+
+<div class="faq">
+<h3>Это окно закроется.</h3>
+<p><strong>После 14 апреля:</strong></p>
+<p>— Камертон отдельно купить нельзя<br>
+— Он войдёт в клуб «Архитектура отношений»<br>
+— Доступ — только по подписке, 3 000₽ в месяц</p>
+<p><strong>Прямо сейчас:</strong></p>
+<p>— 17 уроков, доступ на 3 месяца<br>
+— Первый месяц клуба — бесплатно<br>
+— Всё за 3 000₽</p>
+</div>
+
+<div class="cta">
+<a href="#" class="btn">ПОЛУЧИТЬ КАМЕРТОН ЗА 3 000₽</a>
+<p class="sub">Мгновенный доступ после оплаты</p>
+</div>
+
+<div class="divider">• • •</div>
+
+<div class="faq">
+<h3>«А что если мне не подойдёт?»</h3>
+<p>Ни один человек, прошедший Камертон, не сказал «мне это не помогло».</p>
+<p>Писали «было мало» — потому что хотели ещё.<br>
+Писали «бесценный курс».<br>
+Писали «нужно давать в школе».<br>
+Писали «ни разу не пожалела».</p>
+<p><strong>Ни одна. Ни один.</strong></p>
+<p>Потому что Камертон — это не мотивация, которая выветривается через три дня. Это знание. Оно остаётся. И оно работает каждый день.</p>
+</div>
+
+<div class="divider">• • •</div>
+
+<div class="ft">
+<p class="cs">Ты дочитала до сюда.</p>
+<p>Ты не случайно здесь. Ты не случайно узнала себя в той сцене на кухне. Ты не случайно почувствовала ком в горле.</p>
+<p>Ты знаешь, что нужно что-то менять. Ты давно это знаешь.</p>
+<p>Ты можешь закрыть эту страницу. Вернуться на кухню. Лечь спать с комком в горле. Проснуться уставшей. И прожить ещё один день, как вчера.</p>
+<p>Или ты можешь сделать одну вещь. Прямо сейчас. За три тысячи рублей. И через неделю — впервые за долгое время — понять, <strong>ПОЧЕМУ</strong> всё так. И что с этим делать.</p>
+<p class="cs">Начни с одного урока. Сегодня вечером. Когда дети уснут.</p>
+</div>
+
+<div class="cta" style="margin-bottom:20px;">
+<a href="#" class="btn" style="font-size:20px;padding:24px 56px;">ПОЛУЧИТЬ КАМЕРТОН ЗА 3 000₽</a>
+<div class="cf">
+<span class="cfi">17 уроков</span>
+<span class="cfi">Доступ 3 месяца</span>
+<span class="cfi">+ 1 месяц клуба бесплатно</span>
+</div>
+<p class="sub" style="margin-top:20px;">Специальная цена действует до 14 апреля</p>
+</div>
+
+</div>
+
+<script>
+function updateCountdown(){
+var d=new Date('2026-04-14T23:59:59').getTime();
+var n=new Date().getTime();
+var t=d-n;
+if(t<=0){document.getElementById('days').textContent='00';document.getElementById('hours').textContent='00';document.getElementById('minutes').textContent='00';document.getElementById('seconds').textContent='00';return;}
+document.getElementById('days').textContent=String(Math.floor(t/86400000)).padStart(2,'0');
+document.getElementById('hours').textContent=String(Math.floor((t%86400000)/3600000)).padStart(2,'0');
+document.getElementById('minutes').textContent=String(Math.floor((t%3600000)/60000)).padStart(2,'0');
+document.getElementById('seconds').textContent=String(Math.floor((t%60000)/1000)).padStart(2,'0');
+}
+updateCountdown();setInterval(updateCountdown,1000);
+
+function toggleAccordion(){
+var c=document.getElementById('accordionLessons');
+var b=document.querySelector('.at');
+if(c.classList.contains('open')){c.classList.remove('open');b.textContent='▼ Ещё 11 уроков — нажми, чтобы увидеть все';}
+else{c.classList.add('open');b.textContent='▲ Свернуть';}
+}
+</script>
+</body>
+</html>
